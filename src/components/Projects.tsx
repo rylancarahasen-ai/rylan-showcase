@@ -6,12 +6,23 @@ import { ExternalLink, Github, Code2 } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "Lakeside Serenity Fishing",
+      description: "A peaceful fishing application that brings the tranquility of lakeside fishing to your screen.",
+      technologies: ["Web App", "Interactive", "Recreation"],
+      status: "Live",
+      type: "Web Application",
+      githubUrl: null,
+      liveUrl: "https://lakeside-serenity-fishing-5656a02e.base44.app/",
+      hasLiveDemo: true
+    },
+    {
       title: "AI Projects Repository",
       description: "A collection of my AI and machine learning projects, experiments, and learning journey on GitHub.",
       technologies: ["AI", "Machine Learning", "Python", "GitHub"],
       status: "Active",
       type: "AI Development",
       githubUrl: "https://github.com/rylancarahasen-ai",
+      liveUrl: null,
       hasLiveDemo: false
     },
     {
@@ -21,6 +32,7 @@ const Projects = () => {
       status: "In Progress",
       type: "Web Development",
       githubUrl: null,
+      liveUrl: null,
       hasLiveDemo: false
     },
     {
@@ -30,6 +42,7 @@ const Projects = () => {
       status: "Ongoing",
       type: "Learning",
       githubUrl: null,
+      liveUrl: null,
       hasLiveDemo: false
     },
     {
@@ -39,6 +52,7 @@ const Projects = () => {
       status: "Planning",
       type: "Upcoming",
       githubUrl: null,
+      liveUrl: null,
       hasLiveDemo: false
     }
   ];
@@ -93,6 +107,7 @@ const Projects = () => {
                       project.status === 'In Progress' ? 'bg-primary/20 text-primary' :
                       project.status === 'Ongoing' ? 'bg-green-500/20 text-green-400' :
                       project.status === 'Active' ? 'bg-blue-500/20 text-blue-400' :
+                      project.status === 'Live' ? 'bg-green-600/20 text-green-500' :
                       'bg-yellow-500/20 text-yellow-400'
                     }`}
                   >
@@ -111,7 +126,12 @@ const Projects = () => {
                       </Button>
                     )}
                     {project.hasLiveDemo && (
-                      <Button size="sm" variant="ghost" className="hover:text-primary">
+                      <Button 
+                        size="sm" 
+                        variant="ghost" 
+                        className="hover:text-primary"
+                        onClick={() => window.open(project.liveUrl, '_blank')}
+                      >
                         <ExternalLink className="h-4 w-4" />
                       </Button>
                     )}
