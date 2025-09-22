@@ -34,26 +34,6 @@ const Projects = () => {
       githubUrl: null,
       liveUrl: null,
       hasLiveDemo: false
-    },
-    {
-      title: "Personal Project Showcase",
-      description: "A collection of my coding experiments and learning projects. From simple algorithms to complex applications.",
-      technologies: ["Various", "Learning", "Exploration"],
-      status: "Ongoing",
-      type: "Learning",
-      githubUrl: null,
-      liveUrl: null,
-      hasLiveDemo: false
-    },
-    {
-      title: "Future Innovation",
-      description: "Exciting projects in development. Stay tuned for updates on my latest creations and technological explorations.",
-      technologies: ["TBD", "Innovation", "Creativity"],
-      status: "Planning",
-      type: "Upcoming",
-      githubUrl: null,
-      liveUrl: null,
-      hasLiveDemo: false
     }
   ];
 
