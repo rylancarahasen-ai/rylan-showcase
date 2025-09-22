@@ -6,25 +6,40 @@ import { ExternalLink, Github, Code2 } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "AI Projects Repository",
+      description: "A collection of my AI and machine learning projects, experiments, and learning journey on GitHub.",
+      technologies: ["AI", "Machine Learning", "Python", "GitHub"],
+      status: "Active",
+      type: "AI Development",
+      githubUrl: "https://github.com/rylancarahasen-ai",
+      hasLiveDemo: false
+    },
+    {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS.",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       status: "In Progress",
-      type: "Web Development"
+      type: "Web Development",
+      githubUrl: null,
+      hasLiveDemo: false
     },
     {
       title: "Personal Project Showcase",
       description: "A collection of my coding experiments and learning projects. From simple algorithms to complex applications.",
       technologies: ["Various", "Learning", "Exploration"],
       status: "Ongoing",
-      type: "Learning"
+      type: "Learning",
+      githubUrl: null,
+      hasLiveDemo: false
     },
     {
       title: "Future Innovation",
       description: "Exciting projects in development. Stay tuned for updates on my latest creations and technological explorations.",
       technologies: ["TBD", "Innovation", "Creativity"],
       status: "Planning",
-      type: "Upcoming"
+      type: "Upcoming",
+      githubUrl: null,
+      hasLiveDemo: false
     }
   ];
 
@@ -77,6 +92,7 @@ const Projects = () => {
                     className={`${
                       project.status === 'In Progress' ? 'bg-primary/20 text-primary' :
                       project.status === 'Ongoing' ? 'bg-green-500/20 text-green-400' :
+                      project.status === 'Active' ? 'bg-blue-500/20 text-blue-400' :
                       'bg-yellow-500/20 text-yellow-400'
                     }`}
                   >
@@ -84,12 +100,21 @@ const Projects = () => {
                   </Badge>
                   
                   <div className="flex space-x-2">
-                    <Button size="sm" variant="ghost" className="hover:text-primary">
-                      <Github className="h-4 w-4" />
-                    </Button>
-                    <Button size="sm" variant="ghost" className="hover:text-primary">
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    {project.githubUrl && (
+                      <Button 
+                        size="sm" 
+                        variant="ghost" 
+                        className="hover:text-primary"
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                      >
+                        <Github className="h-4 w-4" />
+                      </Button>
+                    )}
+                    {project.hasLiveDemo && (
+                      <Button size="sm" variant="ghost" className="hover:text-primary">
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    )}
                   </div>
                 </div>
               </CardContent>
