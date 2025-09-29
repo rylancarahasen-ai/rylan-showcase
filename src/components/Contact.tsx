@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, Send } from "lucide-react";
+import { Mail, MessageCircle, Send, Github } from "lucide-react";
 
 const Contact = () => {
   const handleEmailClick = () => {
@@ -63,6 +63,12 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-muted-foreground mx-auto mb-2" />
                     <p className="text-sm text-muted-foreground">Response time</p>
                     <p className="text-sm font-medium text-foreground">24-48 hours</p>
+                  </div>
+                  
+                  <div className="text-center cursor-pointer" onClick={() => window.open('https://github.com/rylancarahasen-ai', '_blank')}>
+                    <Github className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors mx-auto mb-2" />
+                    <p className="text-sm text-muted-foreground">Check out</p>
+                    <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">My Github</p>
                   </div>
                 </div>
               </div>
