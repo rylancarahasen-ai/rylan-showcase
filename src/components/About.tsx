@@ -21,7 +21,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in tech started with curiosity and has evolved into a genuine love for 
+              My journey in tech started with curiosity and has evolved into a genuine likeness for 
               creating digital solutions. I believe in the power of technology to transform ideas 
               into reality and make a positive impact on people's lives.
             </p>
