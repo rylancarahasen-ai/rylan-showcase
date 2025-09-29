@@ -37,36 +37,6 @@ const Projects = () => {
       hasLiveDemo: true
     },
     {
-      title: "AI Projects Repository",
-      description: "A collection of my AI and machine learning projects, experiments, and learning journey on GitHub.",
-      technologies: ["AI", "Machine Learning", "Python", "GitHub"],
-      status: "Active",
-      type: "AI Development",
-      githubUrl: "https://github.com/rylancarahasen-ai",
-      liveUrl: null,
-      hasLiveDemo: false
-    },
-    {
-      title: "Lakeside Serenity Fishing",
-      description: "A peaceful fishing application that brings the tranquility of lakeside fishing to your screen.",
-      technologies: ["Web App", "Interactive", "Recreation"],
-      status: "Live",
-      type: "Web Application",
-      githubUrl: null,
-      liveUrl: "https://lakeside-serenity-fishing-5656a02e.base44.app/",
-      hasLiveDemo: true
-    },
-    {
-      title: "Name Weaver",
-      description: "A simple name generator that can creates fantasy styled names for males and females.",
-      technologies: ["Web App", "Interactive", "Generator"],
-      status: "Live",
-      type: "Web Application",
-      githubUrl: null,
-      liveUrl: "https://name-weaver-tales.lovable.app/",
-      hasLiveDemo: true
-    },
-    {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS.",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
