@@ -17,8 +17,8 @@ const Projects = () => {
       hasLiveDemo: false
     },
     {
-      title: "Tranquil Waters",
-      description: "A peaceful fishing application that brings the tranquility of lakeside fishing to your screen.",
+      title: "A Quiet Cast",
+      description: "Find your way back as Atlas Whiterose by God and fishing after recently losing his wife(Luna Whiterose) in this fishing simulator.",
       technologies: ["Web App", "Interactive", "Recreation"],
       status: "Live",
       type: "Web Application",
