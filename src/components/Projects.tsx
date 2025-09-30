@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     
     {
-      title: "AI Projects Repository",
+      title: "Projects Repository",
       description: "A collection of my AI and machine learning projects, experiments, and learning journey on GitHub.",
       technologies: ["AI", "Machine Learning", "Python", "GitHub"],
       status: "Active",
@@ -23,7 +23,7 @@ const Projects = () => {
       status: "Live",
       type: "Web Application",
       githubUrl: null,
-      liveUrl: "http://localhost:8080/",
+      liveUrl: "http://localhost:8081/",
       hasLiveDemo: true
     },
     {
