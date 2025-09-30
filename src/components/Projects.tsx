@@ -18,7 +18,7 @@ const Projects = () => {
     },
     {
       title: "A Quiet Cast",
-      description: "Find your way back as Atlas Whiterose by God and fishing after recently losing his wife(Luna Whiterose) in this fishing simulator.",
+      description: "Find your way back as Atlas Wildrose by God and fishing after recently losing his wife(Luna Wildrose) in this fishing simulator.",
       technologies: ["Web App", "Interactive", "Recreation"],
       status: "Live",
       type: "Web Application",
