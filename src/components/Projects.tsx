@@ -20,10 +20,10 @@ const Projects = () => {
       title: "A Quiet Cast",
       description: "Find your way back as Atlas Wildrose by God and fishing after recently losing his wife(Luna Wildrose) in this fishing simulator.",
       technologies: ["Web App", "Interactive", "Recreation"],
-      status: "Live",
+      status: "Live/In Progress",
       type: "Web Application",
       githubUrl: null,
-      liveUrl: "http://localhost:8081/",
+      liveUrl: "https://a-quiet-cast.lovable.app/",
       hasLiveDemo: true
     },
     {
